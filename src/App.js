@@ -50,7 +50,7 @@ function App() {
   return (
     <>
       <div
-        className={`w-[100%] h-screen flex justify-center items-center lg:p-0 md:p-0 p-8 ${
+        className={`w-[100%] h-screen flex justify-center items-center ${
           isDark ? "bg-[#141D2F]" : "bg-[#F6F8FF]"
         }  font-mono`}
       >
@@ -60,7 +60,7 @@ function App() {
           <div className="lg:w-1/2 md:w-3/4 w-8/9">
             <div className="flex items-center justify-between">
               <p
-                className={`devfinder text-4xl font-bold ${
+                className={`text-4xl font-bold ${
                   isDark ? "text-[#FFF]" : "text-[#222731]"
                 }`}
               >
@@ -92,7 +92,7 @@ function App() {
               <FaSearch className="text-[#0079FF] text-4xl" />
               <input
                 type="text"
-                className={`appearance-none bg-transparent border-none w-full mr-3 py-1 px-2 leading-tight focus:outline-none text-xl ${
+                className={`appearance-none bg-transparent border-none w-full mr-3 py-1 px-2 leading-tight focus:outline-none lg:text-xl md:text-xl text-sm ${
                   isDark
                     ? "text-[#FFF] placeholder:text-[#FFF]"
                     : "text-[#4B6A9B] placeholder:text-[#4B6A9B]"
@@ -165,20 +165,20 @@ function App() {
                 <div className="h-[100%] w-[18%] hidden lg:inline">{""}</div>
                 <div className="w-full lg:w-[80%]">
                   <div
-                    className={`w-full rounded-lg my-8 p-8 flex md:flex-row lg:flex-row flex-col gap-y-4 justify-between ${
+                    className={`w-full rounded-lg my-8 p-8 flex justify-between ${
                       isDark ? "bg-[#141D2F]" : "bg-[#F6F8FF]"
                     }`}
                   >
                     <div>
                       <p
-                        className={`text-xl ${
+                        className={`lg:text-xl md:text-lg text-sm ${
                           isDark ? "text-[#FFF]" : "text-[#4B6A9B]"
                         }`}
                       >
                         Repos
                       </p>
                       <p
-                        className={`text-2xl font-bold ${
+                        className={`lg:text-2xl md:text-xl text-lg font-bold ${
                           isDark ? "text-[#FFF]" : "text-[#2B3442]"
                         }`}
                       >
@@ -187,14 +187,14 @@ function App() {
                     </div>
                     <div>
                       <p
-                        className={`text-xl ${
+                        className={`lg:text-xl md:text-lg text-sm ${
                           isDark ? "text-[#FFF]" : "text-[#4B6A9B]"
                         }`}
                       >
                         Followers
                       </p>
                       <p
-                        className={`text-2xl font-bold ${
+                        className={`lg:text-2xl md:text-xl text-lg font-bold ${
                           isDark ? "text-[#FFF]" : "text-[#2B3442]"
                         }`}
                       >
@@ -203,14 +203,14 @@ function App() {
                     </div>
                     <div>
                       <p
-                        className={`text-xl ${
+                        className={`lg:text-xl md:text-lg text-sm ${
                           isDark ? "text-[#FFF]" : "text-[#4B6A9B]"
                         }`}
                       >
                         Following
                       </p>
                       <p
-                        className={`text-2xl font-bold ${
+                        className={`lg:text-2xl md:text-xl text-lg font-bold ${
                           isDark ? "text-[#FFF]" : "text-[#2B3442]"
                         }`}
                       >
