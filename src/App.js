@@ -57,7 +57,7 @@ function App() {
         {isLoading ? (
           <div className={isDark ? "text-white" : "text-black"}>LOADING...</div>
         ) : (
-          <div className="lg:w-1/2 md:w-3/4 w-5/6">
+          <div className="lg:w-1/2 md:w-3/4 w-8/9">
             <div className="flex items-center justify-between">
               <p
                 className={`devfinder text-4xl font-bold ${
